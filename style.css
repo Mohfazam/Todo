@@ -91,7 +91,7 @@ body{
 }
 
 
-.todo1{
+.todo{
     display: flex;
     border: 1px solid #E5E7EB;
     border-radius: 4px;
@@ -102,7 +102,7 @@ body{
     padding: 16px;
 }
 
-.todo1 p{
+.todo p{
     color: #4B5563;
 }
 
@@ -122,7 +122,9 @@ body{
 .check-box:checked {
     background-color: #4B5563;
     border-color: #4B5563;
+    
 }
+
 
 .check-box:checked::before {
     content: '\2714';
@@ -135,7 +137,7 @@ body{
 
 
 
-.todo1 button{
+.todo button{
     display: flex;
     justify-content: center;
     align-items: center;
