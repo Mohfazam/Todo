@@ -19,6 +19,7 @@ body{
 .main{
     border-color: #E5E7EB;
     max-width: 448px;
+    min-width: 30%;
     padding: 2rem;
     border-radius: 8px;
     background-color: #FFFFFF;
@@ -31,6 +32,14 @@ body{
     column-gap: 1rem;
     row-gap: 2rem;
     flex-direction: column;
+    width: 100%;
+}
+
+.main-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-heading h3{
@@ -68,10 +77,11 @@ body{
 }
 
 .input{
+    width: 100%;
     height: 44px;
     border: 1px solid #E5E7EB;
     border-radius: 6px;
-    padding: 3px;
+    padding: 8px;
 }
 
 .input:focus{
@@ -79,3 +89,59 @@ body{
     border: 2px solid #E0E7FF;
     box-shadow: 0 0 0 1px rgba(99, 102, 241, 0.2);
 }
+
+
+.todo1{
+    display: flex;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-between;
+    Box-Shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    padding: 16px;
+}
+
+.todo1 p{
+    color: #4B5563;
+}
+
+.check-box {
+    margin-right: 0.5rem;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #E5E7EB;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.check-box:checked {
+    background-color: #4B5563;
+    border-color: #4B5563;
+}
+
+.check-box:checked::before {
+    content: '\2714';
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+
+.todo1 button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    border: none;
+}
+
