@@ -147,3 +147,6 @@ body{
     border: none;
 }
 
+.todo button:hover{
+    cursor: pointer;
+}

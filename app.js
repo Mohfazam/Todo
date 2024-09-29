@@ -29,7 +29,11 @@ button.addEventListener("click", function(){
         parent.appendChild(newtodo);
 
 
-        inputelement.innerHTML = "";
+        inputelement.value = "";
+
+        deletebtn.addEventListener("click", function () {
+            parent.removeChild(newtodo);
+        });
 
 
     }
@@ -37,4 +41,4 @@ button.addEventListener("click", function(){
         alert("Please enter a task");
     }
 
-})
+});
