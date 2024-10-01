@@ -15,6 +15,14 @@ button.addEventListener("click", function(){
         let checkbox = document.createElement("input");
         checkbox.type = "checkbox";
         checkbox.classList.add("check-box");
+        checkbox.addEventListener("change", function(){
+            if(checkbox.checked){
+                todotext.style.textDecoration = "line-through";
+            }
+            else{
+                todotext.style.textDecoration = "none";
+            }
+        })
 
         let todotext = document.createElement("p");
         todotext.textContent = inputtext;
